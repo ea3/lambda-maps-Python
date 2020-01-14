@@ -18,3 +18,9 @@ names = ['Andy', 'Eve', 'Sally']
 
 print (map(splicer, names))
 
+
+lambda num :  num** 2
+
+print(map(lambda num :  num** 2, my_nums))
+
+#print(square(10))
