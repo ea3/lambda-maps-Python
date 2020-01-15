@@ -70,6 +70,49 @@ s = "Hello Mr. Rogers, how are you This fine Tuesday?"
 up_low(s)
 
 
+### Write a function that takes a list and returns a new list with unique elements of the initial list. 
+
+def unique_list(list1):
+	x = []
+	for a in list1:
+		if a not in x:
+			x.append(a)
+	return x
+
+
+
+
+
+######## Write a function to multiply all the numbers in a list 
+
+def multiply(numbers):
+	total = numbers[0]
+	for x in numbers:
+		total *= x
+	return total
+
+print(multiply([1,2,3,4,5]))
+
+
+######## Check if passed string is a palindrome. 
+
+
+def palindrome(s):
+	return s == s[::-1]
+
+print(palindrome("Emilio"))
+
+###Write a function to check is a passed sentence is a pangram. That it has all the letter of the abc. 
+
+import string 
+
+def ispangram(str1, alphabet=string.ascii_lowercase):
+	alphaset = set(alphabet)
+	return alphaset <= set(str1.lower())
+
+print(ispangram("The quick brown fox jumps over the lazy dog"))
+
+
 
 
 
